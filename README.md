@@ -22,6 +22,6 @@ From the data set in step 4, creates a second, independent tidy data set with th
 Steps for testing my code:
 
 1. Download the data source and put into a folder on your local drive. You'll have a UCI HAR Dataset folder.
-2. Download the run_analysis.R in this repository into the parent folder of UCI HAR Dataset, then set it as your working directory using setwd() function.
+2. Download the run_analysis.R in this repository into the parent folder of UCI HAR Dataset, then set UCI HAR Dataset folder as your working directory using setwd() function.
 3. instal packages reshape2 and dplyr if you haven't
 4. Run source("run_analysis.R"), then it will generate a new tidy data file named average of each variable.txt in your working directory.
