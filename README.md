@@ -25,3 +25,11 @@ Steps for testing my code:
 2. Download the run_analysis.R in this repository into the parent folder of UCI HAR Dataset, then set UCI HAR Dataset folder as your working directory using setwd() function.
 3. instal packages reshape2 and dplyr if you haven't
 4. Run source("run_analysis.R"), then it will generate a new tidy data file named average of each variable.txt in your working directory.
+
+Variables:
+
+ activity: activity conducted by volunteers, which include:
+ 1 WALKING 2 WALKING_UPSTAIRS 3 WALKING_DOWNSTAIRS 4 SITTING 5 STANDING 6 LAYING
+ subject_id: id of each volunteer, 1-30
+ variable: feature and discription of the signals
+ mean: average signal value of each variable for each subject and activity    
