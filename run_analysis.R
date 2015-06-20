@@ -1,5 +1,3 @@
-setwd("C:\\users\\zhuangmg\\coursera\\Getting and Cleaning Data\\Project1\\UCI HAR Dataset")
-
 testx=read.table("./test/X_test.txt")
 trainx=read.table("./train/X_train.txt") ## read both set data from test and train
 testy=read.table("./test/Y_test.txt")
@@ -35,7 +33,7 @@ library(reshape2)
 meltdata<-melt(extracteddata,id=c("activity","subject_id"),measure.vars=c(3:81)) ## melt the data frame
 
 library(dplyr)
-write.table(summarize(group_by(meltdata,activity, subject_id,variable),mean=mean(value,na.rm=TRUE)), file="C:\\users\\zhuangmg\\coursera\\Getting and Cleaning Data\\Project1\\average of each variable.txt", row.name=FALSE)
+write.table(summarize(group_by(meltdata,activity, subject_id,variable),mean=mean(value,na.rm=TRUE)), file="./average of each variable.txt", row.name=FALSE)
 ## get mean value of each variable for each activity and subject;export the data to a txt file
 
 
